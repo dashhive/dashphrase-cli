@@ -1,6 +1,6 @@
 {
   "name": "dashphrase-cli",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A DASH Passphrase Mnemonic generator for Mac, Linux, & Windows (BIP-39 compliant)",
   "main": "index.js",
   "files": [
