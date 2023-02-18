@@ -1,7 +1,7 @@
 {
   "name": "dashphrase-cli",
   "version": "1.0.0",
-  "description": "A DASH Passphrase Mnemonic generator for Mac, Linux, & Windows (BIP-39 compliant)",
+  "description": "A DASH Recovery Phrase generator for Mac, Linux, & Windows - BIP-39 (Mnemonic) compliant",
   "main": "index.js",
   "files": [
     "bin/dashphrase.js"
@@ -21,6 +21,8 @@
   },
   "keywords": [
     "DASH",
+    "Recovery",
+    "Phrase",
     "Passphrase",
     "Mnemonic",
     "BIP-39",
@@ -37,6 +39,6 @@
   },
   "homepage": "https://github.com/dashhive/dashphrase-cli#readme",
   "dependencies": {
-    "dashphrase": "^1.3.5"
+    "dashphrase": "^1.3.7"
   }
 }

@@ -1,7 +1,7 @@
 # DashPhrase CLI
 
-A Passphrase Mnemonic generator for Mac, Linux, &amp; Windows \
-(BIP-39 compliant)
+A _Recovery Phrase_ generator for Mac, Linux, &amp; Windows \
+(BIP-39 "mnemonic" compliant)
 
 > Production-ready reference implementation built with DASH SDK Core.
 
@@ -58,7 +58,7 @@ _Developed for (but not specific to) DASH._
    ```sh
    npm install --location=global dashphrase-cli@1
    ```
-3. Use the `dashphrase` command to generate passphrase mnemonics
+3. Use the `dashphrase` command to generate recovery phrases (mnemonics)
 
    ```text
    dashphrase generate -o ./words.txt
@@ -66,7 +66,7 @@ _Developed for (but not specific to) DASH._
 
 # Usage
 
-You can generate a passphrase
+You can generate a recovery phrase
 
 ```sh
 dashphrase generate [-o ./words.txt]
