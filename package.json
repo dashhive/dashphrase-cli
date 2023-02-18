@@ -1,6 +1,6 @@
 {
   "name": "dashphrase-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A DASH Recovery Phrase generator for Mac, Linux, & Windows - BIP-39 (Mnemonic) compliant",
   "main": "index.js",
   "files": [
