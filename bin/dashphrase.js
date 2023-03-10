@@ -120,7 +120,7 @@ async function generate(args) {
   }
 
   await Fs.writeFile(wordsFile, `${words}\n`, "ascii");
-  console.info(`Saved new Passphrase Mnemonic to '${wordsFile}'.`);
+  console.info(`Saved new Recovery Phrase to '${wordsFile}'.`);
 }
 
 async function fileExists(filepath) {
@@ -261,7 +261,7 @@ async function encode(args) {
   }
 
   await Fs.writeFile(wordsFile, `${words}\n`, "ascii");
-  console.info(`Saved encoded Passphrase Mnemonic to '${wordsFile}'.`);
+  console.info(`Saved encoded Recovery Phrase to '${wordsFile}'.`);
 }
 
 async function catmonic(args) {
