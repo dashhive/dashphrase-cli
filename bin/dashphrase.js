@@ -171,6 +171,13 @@ async function seed(args) {
 
   let exists = await fileExists(seedFile);
   if (exists) {
+    let existing = await Fs.readFile(seedFile, "ascii");
+    existing = existing.trim();
+    if (seedHex === existing) {
+      console.info(`Seed already exists in '${seedFile}'.`);
+      return;
+    }
+
     if (!force) {
       console.error(`Error: '${seedFile}' exists. --force to overwrite`);
       process.exit(1);
@@ -219,6 +226,13 @@ async function decode(args) {
 
   let exists = await fileExists(entropyFile);
   if (exists) {
+    let existing = await Fs.readFile(entropyFile, "ascii");
+    existing = existing.trim();
+    if (entropyHex === existing) {
+      console.info(`Entropy already exists in '${entropyFile}'.`);
+      return;
+    }
+
     if (!force) {
       console.error(`Error: '${entropyFile}' exists. --force to overwrite`);
       process.exit(1);
@@ -253,6 +267,13 @@ async function encode(args) {
 
   let exists = await fileExists(wordsFile);
   if (exists) {
+    let existing = await Fs.readFile(wordsFile, "ascii");
+    existing = existing.trim();
+    if (words === existing) {
+      console.info(`Recovery Phrase already exists in '${wordsFile}'.`);
+      return;
+    }
+
     if (!force) {
       console.error(`Error: '${wordsFile}' exists. --force to overwrite`);
       process.exit(1);
