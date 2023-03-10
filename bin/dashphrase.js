@@ -156,7 +156,7 @@ async function seed(args) {
 
   let secret = "";
   if (secretFile) {
-    await Fs.readFile(secretFile, "ascii");
+    secret = await Fs.readFile(secretFile, "ascii");
     secret = secret.trim();
   }
 
