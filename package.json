@@ -39,6 +39,6 @@
   },
   "homepage": "https://github.com/dashhive/dashphrase-cli#readme",
   "dependencies": {
-    "dashphrase": "^1.3.7"
+    "dashphrase": "^1.3.8"
   }
 }
